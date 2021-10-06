@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/Frog.tscn" type="PackedScene" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 125.802, 8 )
+
+[node name="Terrario" type="Node2D"]
+
+[node name="Frog4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 112, 88 )
+
+[node name="Frog6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 160, 87.3242 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 128, 144 )
+shape = SubResource( 1 )
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+position = Vector2( 130.198, 0 )
+shape = SubResource( 1 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2( 256, 8 )
+rotation = 1.5708
+shape = SubResource( 1 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2( 0, 8 )
+rotation = 1.5708
+shape = SubResource( 1 )
+
+[node name="Frog2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 45.4598, 40.108 )
+
+[node name="Frog" parent="." instance=ExtResource( 1 )]
+position = Vector2( 60.361, 108.826 )
+
+[node name="Frog3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 220.361, 108.826 )
+
+[node name="Frog5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 136, 40 )
+
+[node name="Frog7" parent="." instance=ExtResource( 1 )]
+position = Vector2( 188.361, 52.8256 )
+
+[node name="Frog8" parent="." instance=ExtResource( 1 )]
+position = Vector2( 88, 63.6814 )
